@@ -1,0 +1,16 @@
+PODS:
+  - OnboardingKit (0.0.5)
+
+DEPENDENCIES:
+  - OnboardingKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OnboardingKit
+
+SPEC CHECKSUMS:
+  OnboardingKit: 44b085c9e1e191a61fe1caea2bb581645fac1dc1
+
+PODFILE CHECKSUM: deeacf75d2b781777e26bdc8bd5fbf4088e04669
+
+COCOAPODS: 1.5.3

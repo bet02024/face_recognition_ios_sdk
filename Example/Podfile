@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'Olympus' do
+  pod 'AFNetworking', '~> 2.6'
+  pod 'Siesta', '~> 1.0'
+  pod 'SwiftyJSON', '~> 2.3'
+end
