@@ -12,9 +12,7 @@ Selfie Validations Framework, Liveness detection, Face Recognition, Prevent Iden
 
 # Import the Framework in your ViewController
 
-![alt text](https://github.com/josebetomex/mobile_biometric_ios/blob/master/Screen%20Shot%202019-03-04%20at%2013.49.28.png "Selfie")
- ![alt text](https://github.com/josebetomex/mobile_biometric_ios/blob/master/Screen%20Shot%202019-03-04%20at%2013.49.38.png "Validation")
-
+![alt text](https://github.com/josebetomex/mobile_biometric_ios/blob/master/andia.gif "Selfie")
 
 ```swift
 import SelfieSDK

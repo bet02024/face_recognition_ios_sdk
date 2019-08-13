@@ -14,13 +14,12 @@
 		CA5939C021DD510A00504BB9 /* progress.gif in Resources */ = {isa = PBXBuildFile; fileRef = CA5939BC21DD510900504BB9 /* progress.gif */; };
 		CA5939C121DD510A00504BB9 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = CA5939BE21DD510A00504BB9 /* loading.gif */; };
 		CA5939C221DD510A00504BB9 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = CA5939BF21DD510A00504BB9 /* loader.gif */; };
+		CA6716D023023C2700D26212 /* SelfieExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6716CF23023C2700D26212 /* SelfieExampleViewController.swift */; };
 		CABF229821964077002503FA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABF229721964077002503FA /* CoreMedia.framework */; };
 		CABF229A21964087002503FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABF229921964087002503FA /* UIKit.framework */; };
 		CABF229C21964091002503FA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABF229B21964091002503FA /* CoreVideo.framework */; };
 		CABF229E219640A0002503FA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABF229D219640A0002503FA /* CoreImage.framework */; };
 		CAC0909221938C40003DA598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0909121938C40003DA598 /* AppDelegate.swift */; };
-		CAC0909421938C40003DA598 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0909321938C40003DA598 /* FirstViewController.swift */; };
-		CAC0909621938C40003DA598 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0909521938C40003DA598 /* IntroViewController.swift */; };
 		CAC0909921938C40003DA598 /* Andia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC0909721938C40003DA598 /* Andia.storyboard */; };
 		CAC0909E21938C41003DA598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC0909C21938C41003DA598 /* LaunchScreen.storyboard */; };
 		CACDF95821DE9C0D005AE4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CACDF95721DE9C0C005AE4F2 /* Assets.xcassets */; };
@@ -49,14 +48,13 @@
 		CA5939BC21DD510900504BB9 /* progress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = progress.gif; sourceTree = "<group>"; };
 		CA5939BE21DD510A00504BB9 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		CA5939BF21DD510A00504BB9 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		CA6716CF23023C2700D26212 /* SelfieExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieExampleViewController.swift; sourceTree = "<group>"; };
 		CABF229721964077002503FA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		CABF229921964087002503FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CABF229B21964091002503FA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		CABF229D219640A0002503FA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		CAC0908E21938C40003DA598 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC0909121938C40003DA598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAC0909321938C40003DA598 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CAC0909521938C40003DA598 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		CAC0909821938C40003DA598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Andia.storyboard; sourceTree = "<group>"; };
 		CAC0909D21938C41003DA598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAC0909F21938C41003DA598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,10 +134,9 @@
 			children = (
 				CAC0909121938C40003DA598 /* AppDelegate.swift */,
 				CA8E452821A346E800558CBC /* images */,
-				CAC0909321938C40003DA598 /* FirstViewController.swift */,
 				CACDF95721DE9C0C005AE4F2 /* Assets.xcassets */,
-				CAC0909521938C40003DA598 /* IntroViewController.swift */,
 				CAC0909721938C40003DA598 /* Andia.storyboard */,
+				CA6716CF23023C2700D26212 /* SelfieExampleViewController.swift */,
 				CAC0909C21938C41003DA598 /* LaunchScreen.storyboard */,
 				CAC0909F21938C41003DA598 /* Info.plist */,
 			);
@@ -166,7 +163,6 @@
 				CAC0908A21938C40003DA598 /* Sources */,
 				CAC0908B21938C40003DA598 /* Frameworks */,
 				CAC0908C21938C40003DA598 /* Resources */,
-				14D34782874127DDBA9002EE /* [CP] Embed Pods Frameworks */,
 				CA548D4F22038CDA002B9A17 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -236,28 +232,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14D34782874127DDBA9002EE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/OnboardingKit/OnboardingKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnboardingKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		30AC9489CD91EA52B0921854 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,9 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAC0909621938C40003DA598 /* IntroViewController.swift in Sources */,
 				CAC0909221938C40003DA598 /* AppDelegate.swift in Sources */,
-				CAC0909421938C40003DA598 /* FirstViewController.swift in Sources */,
+				CA6716D023023C2700D26212 /* SelfieExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
