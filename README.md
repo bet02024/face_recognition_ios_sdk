@@ -21,35 +21,46 @@ import SelfieSDK
 class myViewController: UIViewController, LiveViewControllerDelegate {
   //View Controller Code
   
-  
-  @IBAction
-  func doOnboarding() {
-    let selfie = SelfieValidator()
-    let apiKey = "ExampleAPIKEY" //Get your own API KEY in Andia site.
-    let viewController =  selfie.doOnboarding(apiKey: apiKey, delegateController: self)
-    present(viewController, animated: true, completion: nil)
-  }
-  
-  @IBAction
-  func doValidation() {
-        //Example of Validation call
+   @IBAction
+    func selfieOnboarding() {
         let selfie = SelfieValidator()
-        let apiKey = "ExampleAPIKEY" //Get your own API KEY in Andia site.
-        let viewController = selfie.doValidation(userId: userId!, apiKey: apiKey, delegateController: self)
+        let viewController =  selfie.doSelfieOnboarding(apiKey: apiKey, delegateController: self)
         present(viewController, animated: true, completion: nil)
-  }
-  
-  //Callbacks
-  //Validataion Callback
-  func resultLiveValidation(_ isMatch: Bool?, _ message: String?){
+    }
+    
+    @IBAction
+    func documentOnboarding() {
+        let selfie = SelfieValidator()
+        let viewController =  selfie.doDocumentOnboarding(apiKey: apiKey, delegateController: self)
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    @IBAction
+    func startLiveValidation() {
+        let userId = UserDefaults.standard.string(forKey: "userId")
+        let selfie = SelfieValidator()
+        let viewController = selfie.doValidation(userId: userId!, apiKey: apiKey, isDocumentVsSelfie: false, delegateController: self)
         
-  }
+        present(viewController, animated: true, completion: nil)
+    }
   
-  //OnBoarding Callback
-  //userId is the new identifier for this selfie customer
-  func resultOnboarding(_ success: Bool?, _ message: String?,_ userId: String?) {
-       
-  }
+
+  //Callbacks
+    func resultLiveValidation(_ isMatch: Bool?, _ message: String?) {
+    
+    }
+    
+    func resultDocumentOnboarding(_ success: Bool?, _ message: String?,_ userId: String?, _ ocr: String?) {
+        
+    }
+    
+    func resultDocumentOcr(_ success: Bool?, _ nextController: UIViewController?) {
+         
+    }
+    
+    func resultSelfieOnboarding(_ success: Bool?, _ message: String?,_ userId: String?) {
+         
+    }
   
 }
 
